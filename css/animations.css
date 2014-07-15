@@ -45,7 +45,7 @@
     opacity:0;
 }
 
-.lightSpeedInRight. .lightSpeedInLeft{
+.lightSpeedInRight, .lightSpeedInLeft{
     opacity:0;
     -webkit-transform: translateX(400px); 
     transform: translateX(400px); 
@@ -557,6 +557,38 @@
 .fadeInDown.go { 
     -webkit-animation-name: fadeInDown; 
     animation-name: fadeInDown; 
+}
+
+/*****************
+* rotateIn *
+*****************/
+@-webkit-keyframes rotateIn { 
+    0% { 
+        -webkit-transform-origin: center center; 
+        -webkit-transform: rotate(-200deg); 
+        opacity: 0; 
+    } 
+    100% { 
+        -webkit-transform-origin: center center; 
+        -webkit-transform: rotate(0); 
+        opacity: 1; 
+    } 
+} 
+@keyframes rotateIn { 
+    0% { 
+        transform-origin: center center; 
+        transform: rotate(-200deg); 
+        opacity: 0; 
+    } 
+    100% { 
+        transform-origin: center center; 
+        transform: rotate(0); 
+        opacity: 1; 
+    } 
+} 
+.rotateIn.go { 
+    -webkit-animation-name: rotateIn; 
+    animation-name: rotateIn; 
 }
 
 /*****************
