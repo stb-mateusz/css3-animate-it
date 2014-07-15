@@ -120,7 +120,81 @@
 			<div class='animatedParent'>
 				<hr class='animated fadeIn slow' />
 			</div>
+			<!-- fadeInDownShort -->
+			<div class='animatedParent row article'>
+			
+				<div class='col-md-4'>
+					
+					<h3 class='animated bounceInUp padded'>fadeInDownShort (New!)</h3>
+				</div>
+				<div class='animatedParent col-md-6'>
+<pre class='animated growIn slow'>
+<?php echo htmlspecialchars("<h2 class='animated "); ?><span class='highlighter'><?php echo htmlspecialchars("fadeInDownShort"); ?></span><?php echo htmlspecialchars("'>It Works!</h2>"); ?>
+</pre>
+				</div>
+				<div class='col-md-2'><div class='repeat animated fadeInDownShort '></div></div>
+			</div>
 
+			<div class='animatedParent'>
+				<hr class='animated fadeIn slow' />
+			</div>
+
+			<!-- fadeInUpShort -->
+			<div class='animatedParent row article'>
+			
+				<div class='col-md-4'>
+					
+					<h3 class='animated bounceInUp padded'>fadeInUpShort (New!)</h3>
+				</div>
+				<div class='animatedParent col-md-6'>
+<pre class='animated growIn slow'>
+<?php echo htmlspecialchars("<h2 class='animated "); ?><span class='highlighter'><?php echo htmlspecialchars("fadeInUpShort"); ?></span><?php echo htmlspecialchars("'>It Works!</h2>"); ?>
+</pre>
+				</div>
+				<div class='col-md-2'><div class='repeat animated fadeInUpShort '></div></div>
+			</div>
+
+			<div class='animatedParent'>
+				<hr class='animated fadeIn slow' />
+			</div>
+
+			<!-- fadeInLeftShort -->
+			<div class='animatedParent row article'>
+			
+				<div class='col-md-4'>
+					
+					<h3 class='animated bounceInUp padded'>fadeInLeftShort (New!)</h3>
+				</div>
+				<div class='animatedParent col-md-6'>
+<pre class='animated growIn slow'>
+<?php echo htmlspecialchars("<h2 class='animated "); ?><span class='highlighter'><?php echo htmlspecialchars("fadeInLeftShort"); ?></span><?php echo htmlspecialchars("'>It Works!</h2>"); ?>
+</pre>
+				</div>
+				<div class='col-md-2'><div class='repeat animated fadeInLeftShort '></div></div>
+			</div>
+
+			<div class='animatedParent'>
+				<hr class='animated fadeIn slow' />
+			</div>
+
+			<!-- fadeInRightShort -->
+			<div class='animatedParent row article'>
+			
+				<div class='col-md-4'>
+					
+					<h3 class='animated bounceInUp padded'>fadeInRightShort (New!)</h3>
+				</div>
+				<div class='animatedParent col-md-6'>
+<pre class='animated growIn slow'>
+<?php echo htmlspecialchars("<h2 class='animated "); ?><span class='highlighter'><?php echo htmlspecialchars("fadeInRightShort"); ?></span><?php echo htmlspecialchars("'>It Works!</h2>"); ?>
+</pre>
+				</div>
+				<div class='col-md-2'><div class='repeat animated fadeInRightShort '></div></div>
+			</div>
+
+			<div class='animatedParent'>
+				<hr class='animated fadeIn slow' />
+			</div>
 			<!-- fadeInDown -->
 			<div class='animatedParent row article'>
 			

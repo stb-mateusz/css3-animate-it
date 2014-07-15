@@ -146,8 +146,63 @@
 </pre>
 					</div>
 				</div>
+
+
+				<div class='animatedParent'>
+					<hr class='animated fadeIn slow' />
+				</div>
+
+				<!-- On Click  -->
+				<div class='animatedParent row article'>
+					<h3 class='animated bounceInDown'>On Click Toggle (New!)</h3>
+					<div class='col-md-6'>
+						<p class='animated bounceInLeft slow'>
+							You can now call the animations with an on click event. You can can define an out animation for transitioning out with this. <input type='button' class='btn btn-primary animatedClick' data-target='clickExample' value='Click me!'>
+						</p>
+						<p class='animated bounceInLeft slow'>
+							Please note that the target will only animate on view if you wrap it in an animatedParent class. If it is not in this then the animation will only trigger on click.
+						</p>
+					</div>
+					<div class='animatedParent col-md-6'>
+<pre class='animated bounceInRight fadeOutDown slow clickExample'>
+<?php echo htmlspecialchars("<input type='button' class='"); ?><span class='highlighter'><?php echo htmlspecialchars("animatedClick") ?></span><?php echo htmlspecialchars("'"); ?> <span class='highlighter'>data-target='clickExample'</span><?php echo htmlspecialchars(">"); ?>
+
+<?php echo htmlspecialchars("<h2 class='animated bounceInDown "); ?><span class='highlighter'><?php echo htmlspecialchars("clickExample"); ?></span> <span class='highlighter'><?php echo htmlspecialchars("fadeOutDown"); ?></span><?php echo htmlspecialchars("'>It Works!</h2>"); ?>
+
+
+</pre>
+					</div>
+				</div>
+
+				<div class='animatedParent'>
+					<hr class='animated fadeIn slow' />
+				</div>
+
+				<!-- On Click Sequencing -->
+				<div class='animatedParent row article'>
+					<h3 class='animated bounceInDown'>On Click With Sequencing (New!)</h3>
+					<div class='col-md-5'>
+						<p class='animated bounceInLeft slow'>
+							You can now call the animations with an on click event. You can can define an out animation for transitioning out with this. 
+						</p>
+					</div>
+					<div class='animatedParent col-md-7'>
+<pre class='animated bounceInRight slow'>
+<?php echo htmlspecialchars("<input type='button' class='animatedClick' data-target='clickExample'"); ?> <span class='highlighter'>data-sequence='500'</span><?php echo htmlspecialchars(">"); ?>
+
+<?php echo htmlspecialchars("<h2 class='animated bounceInDown clickExample fadeOutDown' "); ?><span class='highlighter'>data-id='1'</span><?php echo htmlspecialchars(">It Works!</h2>"); ?>
+
+<?php echo htmlspecialchars("<h2 class='animated bounceInDown clickExample fadeOutDown' "); ?><span class='highlighter'>data-id='2'</span><?php echo htmlspecialchars(">It Works!</h2>"); ?>
+
+</pre>
+					</div>
+				</div>
 			</div>
 		</div>
+			</div>
+		
+		</div>
+
 
 		<div class='animatedParent' data-sequence='1000'>
 			<footer class='animated growIn' data-id='1'>
