@@ -1,0 +1,37 @@
+/************
+* lightSpeedOutRight *
+*************/
+@-webkit-keyframes lightSpeedOutRight {
+    0% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+    100% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+}
+@keyframes lightSpeedOutRight {
+    0% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+    100% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
+}
+.lightSpeedOutRight.goAway {
+    -webkit-animation-name: lightSpeedOutRight;
+    animation-name: lightSpeedOutRight;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+
+/************
+* lightSpeedOutLeft *
+*************/
+@-webkit-keyframes lightSpeedOutLeft {
+    0% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+    100% { -webkit-transform: translateX(-100%) skewX(30deg); opacity: 0; }
+}
+@keyframes lightSpeedOutLeft {
+    0% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+    100% { transform: translateX(-100%) skewX(30deg); opacity: 0; }
+}
+.lightSpeedOutLeft.goAway {
+    -webkit-animation-name: lightSpeedOutLeft;
+    animation-name: lightSpeedOutLeft;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+
+}

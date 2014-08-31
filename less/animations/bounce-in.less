@@ -6,59 +6,6 @@
 @transition-variation-medium: 30px;
 @transition-variation-small: 10px;
 
-/******************
-* Bounce in right *
-*******************/
-
-.animated {
-  .transition;
-}
-
-.slow {
-  .transition( @transition-slow );
-}
-
-.slower {
-  .transition( @transition-slower );
-}
-
-.slowest {
-  .transition( @transition-slowest );
-}
-
-.bounceInRight,
-.bounceInLeft,
-.bounceInUp,
-.bounceInDown {
-  .opacity;
-  .translateX( @transition-variation-big );
-}
-
-.fadeInRight,
-.fadeInLeft,
-.fadeInUp,
-.fadeInDown {
-  .opacity;
-  .translateX( @transition-variation-big );
-}
-
-.flipInX,
-.flipInY,
-.rotateIn,
-.rotateInUpLeft,
-.rotateInUpRight,
-.rotateInDownLeft,
-.rotateDownUpRight,
-.rollIn {
-  .opacity;
-}
-
-.lightSpeedInRight,
-.lightSpeedInLeft {
-  .opacity;
-  .translateX( @transition-variation-big );
-}
-
 /***********
 * bounceIn *
 ************/
