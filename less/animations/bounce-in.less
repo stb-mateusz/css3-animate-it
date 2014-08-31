@@ -1,10 +1,10 @@
-@transition-slow: 1.5s;
-@transition-slower: 2s;
-@transition-slowest: 3s;
-
-@transition-variation-big: 400px;
-@transition-variation-medium: 30px;
-@transition-variation-small: 10px;
+.bounceInRight,
+.bounceInLeft,
+.bounceInUp,
+.bounceInDown {
+  .opacity;
+  .translateX( 400px );
+}
 
 /***********
 * bounceIn *
@@ -13,16 +13,16 @@
 .bounceIn-frames() {
   0% {
     .opacity;
-    .scale( 0.3 );
+    .scale( .3 );
   }
 
   50% {
-    .opacity(1);
+    .opacity( 1 );
     .scale( 1.05 );
   }
 
   70% {
-    .scale( 0.9 );
+    .scale( .9 );
   }
 
   100% {
@@ -49,17 +49,14 @@
 .bounceInRight-frames() {
   0% {
     .opacity;
-    .translateX( @transition-variation-big );
+    .translateX( 400px );
   }
-
   60% {
-    .translateX( -@transition-variation-medium );
+    .translateX( -30px );
   }
-
   80% {
-    .translateX( @transition-variation-small );
+    .translateX( 10px );
   }
-
   100% {
     .opacity;
     .translateX;
@@ -85,17 +82,14 @@
 .bounceInLeft-frames() {
   0% {
     .opacity;
-    .translateX( -@transition-variation-big );
+    .translateX( -400px );
   }
-
   60% {
-    .translateX( @transition-variation-medium );
+    .translateX( 30px );
   }
-
   80% {
-    .translateX( -@transition-variation-small );
+    .translateX( -10px );
   }
-
   100% {
     .opacity(1);
     .translateX;
@@ -121,19 +115,16 @@
 .bounceInUp-frames() {
   0% {
     .opacity;
-    .translateY( @transition-variation-big );
+    .translateY( 400px );
   }
-
   60% {
-    .translateY( -@transition-variation-medium );
+    .translateY( -30px );
   }
-
   80% {
-    .translateY( @transition-variation-small );
+    .translateY( 10px );
   }
-
   100% {
-    .opacity(1);
+    .opacity( 1 );
     .translateY;
   }
 }
@@ -157,17 +148,14 @@
 .bounceInDown-frames() {
   0% {
     .opacity;
-    .translateY( -@transition-variation-big );
+    .translateY( -400px );
   }
-
   60% {
-    .translateY( @transition-variation-medium );
+    .translateY( 30px );
   }
-
   80% {
-    .translateY( -@transition-variation-small );
+    .translateY( -10px );
   }
-
   100% {
     .opacity(1);
     .translateY;
