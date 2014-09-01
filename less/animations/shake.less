@@ -1,35 +1,55 @@
 /********
 * Shake *
 ********/
+
+.shake-frames() {
+  0%, 100% {
+    .translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    .translateX( -10px );
+  }
+  20%, 40%, 60%, 80% {
+    .translateX( 10px );
+  }
+}
+
 @-webkit-keyframes shake {
-    0%, 100% {-webkit-transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
-    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+  .shake-frames;
 }
+
 @keyframes shake {
-    0%, 100% {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-    20%, 40%, 60%, 80% {transform: translateX(10px);}
+  .shake-frames;
 }
+
 .shake.go {
-    -webkit-animation-name: shake;
-    animation-name: shake;
+  .animation( shake );
 }
 
 /********
 * ShakeUp *
 ********/
+
+.shakeUp-frames() {
+  0%, 100% {
+    .translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    .translateY( -10px );
+  }
+  20%, 40%, 60%, 80% {
+    .translateY( 10px );
+  }
+}
+
 @-webkit-keyframes shakeUp {
-    0%, 100% {-webkit-transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-10px);}
-    20%, 40%, 60%, 80% {-webkit-transform: translateY(10px);}
+  .shakeUp-frames;
 }
+
 @keyframes shakeUp {
-    0%, 100% {transform: translateY(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
-    20%, 40%, 60%, 80% {transform: translateY(10px);}
+  .shakeUp-frames;
 }
+
 .shakeUp.go {
-    -webkit-animation-name: shakeUp;
-    animation-name: shakeUp;
+  .animation( shakeUp );
 }
