@@ -1,49 +1,85 @@
 .lightSpeedInRight,
 .lightSpeedInLeft {
   .opacity;
-  .translateX( @transition-variation-big );
+  .translateX( 400px );
 }
 
 /***************
 * lightSpeedInRight *
 ****************/
-@-webkit-keyframes lightSpeedInRight {
-   0% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
-    60% { -webkit-transform: translateX(-20%) skewX(30deg); opacity: 1; }
-    80% { -webkit-transform: translateX(0%) skewX(-15deg); opacity: 1; }
-    100% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+
+.lightSpeedInLeft-frames() {
+  0% {
+    .translateX( 100% );
+    .skewX( -30deg );
+    .opacity;
+  }
+  60% {
+    .translateX( -20% );
+    .skewX( 30deg );
+    .opacity( 1 );
+  }
+  80% {
+    .translateX( 0% );
+    .skewX( -15deg );
+    .opacity( 1 );
+  }
+  100% {
+    .translateX( 0% );
+    .skewX( 0deg );
+    .opacity( 1 );
+  }
 }
-@keyframes lightSpeedInRight {
-    0% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
-    60% { transform: translateX(-20%) skewX(30deg); opacity: 1; }
-    80% { transform: translateX(0%) skewX(-15deg); opacity: 1; }
-    100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+
+@-webkit-keyframes lightSpeedInLeft {
+  .lightSpeedInLeft-frames;
 }
-.lightSpeedInRight.go {
-    -webkit-animation-name: lightSpeedInRight;
-    animation-name: lightSpeedInRight;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+
+@keyframes lightSpeedInLeft {
+  .lightSpeedInLeft-frames;
+}
+
+.lightSpeedInLeft.go {
+  .animation( lightSpeedInLeft );
+  .animation-timing( ease-out );
 }
 
 /***************
 * lightSpeedInLeft *
 ****************/
-@-webkit-keyframes lightSpeedInLeft {
-   0% { -webkit-transform: translateX(-100%) skewX(30deg); opacity: 0; }
-    60% { -webkit-transform: translateX(20%) skewX(-30deg); opacity: 1; }
-    80% { -webkit-transform: translateX(0%) skewX(15deg); opacity: 1; }
-    100% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+
+.lightSpeedInRight-frames() {
+  0% {
+    .translateX( -100% );
+    .skewX( 30deg );
+    .opacity;
+  }
+  60% {
+    .translateX( 20% );
+    .skewX( -30deg );
+    .opacity( 1 );
+  }
+  80% {
+    .translateX( 0% );
+    .skewX( 15deg );
+    .opacity( 1 );
+  }
+  100% {
+    .translateX( 0% );
+    .skewX( 0deg );
+    .opacity( 1 );
+  }
 }
-@keyframes lightSpeedInLeft {
-    0% { transform: translateX(-100%) skewX(30deg); opacity: 0; }
-    60% { transform: translateX(20%) skewX(-30deg); opacity: 1; }
-    80% { transform: translateX(0%) skewX(15deg); opacity: 1; }
-    100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+
+@-webkit-keyframes lightSpeedInRight {
+  .lightSpeedInRight-frames;
 }
-.lightSpeedInLeft.go {
-    -webkit-animation-name: lightSpeedInLeft;
-    animation-name: lightSpeedInLeft;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+
+@keyframes lightSpeedInRight {
+  .lightSpeedInRight-frames;
+}
+
+.lightSpeedInRight.go {
+  .animation( lightSpeedInRight );
+  .animation-timing( ease-out );
 }
