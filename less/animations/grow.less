@@ -2,41 +2,33 @@
 * Grow in *
 ***********/
 
+.growIn-frames() {
+  0% {
+    .scale( .2 );
+    .opacity;
+  }
+  50% {
+    .scale( 1.2 );
+  }
+  100% {
+    .scale( 1 );
+    .opacity( 1 );
+  }
+}
+
 @-webkit-keyframes growIn {
-    0% {
-        -webkit-transform: scale(0.2);
-        opacity:0;
-    }
-    50% {
-        -webkit-transform: scale(1.2);
-
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity:1;
-    }
+  .growIn-frames;
 }
+
 @keyframes growIn {
-    0% {
-        transform: scale(0.2);
-        opacity:0;
-    }
-    50% {
-        transform: scale(1.2);
-
-    }
-    100% {
-        transform: scale(1);
-        opacity:1;
-    }
+  .growIn-frames;
 }
+
 .growIn {
-
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
-    opacity:0;
+  .scale( .2 );
+  .opacity;
 }
-.growIn.go{
-    -webkit-animation-name: growIn;
-    animation-name: growIn;
+
+.growIn.go {
+  .animation( growIn );
 }
