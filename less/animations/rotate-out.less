@@ -1,129 +1,115 @@
 /************
 * rotateOut *
 *************/
-@-webkit-keyframes rotateOut {
-    0% {
-        -webkit-transform-origin: center center;
-        -webkit-transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform-origin: center center;
-        -webkit-transform: rotate(200deg);
-        opacity: 0;
-    }
-}
-@keyframes rotateOut {
-    0% {
-        transform-origin: center center;
-        transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        transform-origin: center center;
-        transform: rotate(200deg);
-        opacity: 0;
-    }
-}
-.rotateOut.goAway {
-    -webkit-animation-name: rotateOut;
-    animation-name: rotateOut;
+
+.rotateOut-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( center center );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 200deg );
+    .transform-origin( center center );
+    .opacity;
+  }
 }
 
+@-webkit-keyframes rotateOut {
+  .rotateOut-frames;
+}
+
+@keyframes rotateOut {
+  .rotateOut-frames;
+}
+
+.rotateOut.go {
+  .animation( rotateOut );
+}
 
 /************
 * rotateOutUpLeft *
 *************/
+
+.rotateOutUpLeft-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( left bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( -90deg );
+    .transform-origin( left bottom );
+    .opacity;
+  }
+}
+
 @-webkit-keyframes rotateOutUpLeft {
-    0% {
-        -webkit-transform-origin: left bottom;
-        -webkit-transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform-origin: left bottom;
-        -webkit-transform: rotate(-90deg);
-        opacity: 0;
-    }
+  .rotateOutUpLeft-frames;
 }
+
 @keyframes rotateOutUpLeft {
-    0% {
-        transform-origin: left bottom;
-        transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        -transform-origin: left bottom;
-        -transform: rotate(-90deg);
-        opacity: 0;
-    }
+  .rotateOutUpLeft-frames;
 }
-.rotateOutUpLeft.goAway {
-    -webkit-animation-name: rotateOutUpLeft;
-    animation-name: rotateOutUpLeft;
+
+.rotateOutUpLeft.go {
+  .animation( rotateOutUpLeft );
 }
 
 /************
 * rotateOutDownLeft *
 *************/
 
+.rotateOutDownLeft-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( left bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 90deg );
+    .transform-origin( left bottom );
+    .opacity;
+  }
+}
+
 @-webkit-keyframes rotateOutDownLeft {
-    0% {
-        -webkit-transform-origin: left bottom;
-        -webkit-transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform-origin: left bottom;
-        -webkit-transform: rotate(90deg);
-        opacity: 0;
-    }
+  .rotateOutDownLeft-frames;
 }
+
 @keyframes rotateOutDownLeft {
-    0% {
-        transform-origin: left bottom;
-        transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        transform-origin: left bottom;
-        transform: rotate(90deg);
-        opacity: 0;
-    }
+  .rotateOutDownLeft-frames;
 }
-.rotateOutDownLeft.goAway {
-    -webkit-animation-name: rotateOutDownLeft;
-    animation-name: rotateOutDownLeft;
+
+.rotateOutDownLeft.go {
+  .animation( rotateOutDownLeft );
 }
+
 /************
 * rotateOutUpRight *
 *************/
 
+.rotateOutUpRight-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( right bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 90deg );
+    .transform-origin( right bottom );
+    .opacity;
+  }
+}
+
 @-webkit-keyframes rotateOutUpRight {
-    0% {
-        -webkit-transform-origin: right bottom;
-        -webkit-transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform-origin: right bottom;
-        -webkit-transform: rotate(90deg);
-        opacity: 0;
-    }
+  .rotateOutUpRight-frames;
 }
+
 @keyframes rotateOutUpRight {
-    0% {
-        transform-origin: right bottom;
-        transform: rotate(0);
-        opacity: 1;
-    }
-    100% {
-        transform-origin: right bottom;
-        transform: rotate(90deg);
-        opacity: 0;
-    }
+  .rotateOutUpRight-frames;
 }
-.rotateOutUpRight.goAway {
-    -webkit-animation-name: rotateOutUpRight;
-    animation-name: rotateOutUpRight;
+
+.rotateOutUpRight.go {
+  .animation( rotateOutUpRight );
 }
