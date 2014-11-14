@@ -152,9 +152,34 @@
 					<hr class='animated fadeIn slow' />
 				</div>
 
+				
+
+				<!-- Delay -->
+				<div class='animatedParent row article'>
+					<h3 class='animated bounceInDown'>Delay (New)</h3>
+					<div class='col-md-6'>
+						<p class='animated bounceInLeft slow'>
+							You can now add individual delays to your animations if you don't want to do it with sequencing delays, please refer to the animations css file to see all the delays available.
+						</p>
+					</div>
+					<div class='animatedParent col-md-6'>
+<pre class='animated bounceInRight slow'>
+<?php echo htmlspecialchars("<div class='animatedParent "); ?><span class='highlighter'><?php echo htmlspecialchars("delay-250") ?></span><?php echo htmlspecialchars("'>") ?>
+
+	<?php echo htmlspecialchars("<h2 class='animated bounceInDown'>It Works!</h2>"); ?>
+
+<?php echo htmlspecialchars("</div>"); ?>
+</pre>
+					</div>
+				</div>
+
+				<div class='animatedParent'>
+					<hr class='animated fadeIn slow' />
+				</div>
+
 				<!-- On Click  -->
 				<div class='animatedParent row article'>
-					<h3 class='animated bounceInDown'>On Click Toggle (New!)</h3>
+					<h3 class='animated bounceInDown'>On Click Toggle</h3>
 					<div class='col-md-6'>
 						<p class='animated bounceInLeft slow'>
 							You can now call the animations with an on click event. You can can define an out animation for transitioning out with this. <input type='button' class='btn btn-primary animatedClick' data-target='clickExample' value='Click me!'>
@@ -180,7 +205,7 @@
 
 				<!-- On Click Sequencing -->
 				<div class='animatedParent row article'>
-					<h3 class='animated bounceInDown'>On Click With Sequencing (New!)</h3>
+					<h3 class='animated bounceInDown'>On Click With Sequencing</h3>
 					<div class='col-md-5'>
 						<p class='animated bounceInLeft slow'>
 							You can now call the animations with an on click event. You can can define an out animation for transitioning out with this. 
@@ -193,6 +218,32 @@
 <?php echo htmlspecialchars("<h2 class='animated bounceInDown clickExample fadeOutDown' "); ?><span class='highlighter'>data-id='1'</span><?php echo htmlspecialchars(">It Works!</h2>"); ?>
 
 <?php echo htmlspecialchars("<h2 class='animated bounceInDown clickExample fadeOutDown' "); ?><span class='highlighter'>data-id='2'</span><?php echo htmlspecialchars(">It Works!</h2>"); ?>
+
+</pre>
+					</div>
+				</div>
+
+
+				<div class='animatedParent'>
+					<hr class='animated fadeIn slow' />
+				</div>
+
+
+				<!-- IE Fix -->
+				<div class='animatedParent row article'>
+					<h3 class='animated bounceInDown'>IE Fix</h3>
+					<div class='col-md-5'>
+						<p class='animated bounceInLeft slow'>
+							This is just a fix that will fix the elements not appearing on IE9 or less, please not that the animations will not work on IE9 or less. 
+							<br /><br />
+							Place this below the animations.css link in the head of your file.
+						</p>
+					</div>
+					<div class='animatedParent col-md-7'>
+<pre class='animated bounceInRight slow'>
+<?php echo htmlspecialchars("<!--[if lte IE 9]>
+      <link href='/PATH/TO/FOLDER/css/animations-ie-fix.css' rel='stylesheet'>
+<![endif]-->"); ?>
 
 </pre>
 					</div>
