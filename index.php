@@ -171,7 +171,7 @@
 <?php echo htmlspecialchars("</div>"); ?>
 	</pre>
 		</div>
-				</div>
+			
 				</div>
 
 				<div class='animatedParent'>
