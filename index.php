@@ -163,14 +163,15 @@
 						</p>
 					</div>
 					<div class='animatedParent col-md-6'>
-<pre class='animated bounceInRight slow'>
-<?php echo htmlspecialchars("<div class='animatedParent "); ?><span class='highlighter'><?php echo htmlspecialchars("delay-250") ?></span><?php echo htmlspecialchars("'>") ?>
+	<pre class='animated bounceInRight slow'>
+<?php echo htmlspecialchars("<div class='animatedParent'"); ?><span class='highlighter'><?php echo htmlspecialchars("") ?></span><?php echo htmlspecialchars(">") ?>
 
-	<?php echo htmlspecialchars("<h2 class='animated bounceInDown'>It Works!</h2>"); ?>
+	<?php echo htmlspecialchars("<h2 class='animated bounceInDown "); ?><span class='highlighter'><?php echo htmlspecialchars("delay-250"); ?></span><?php echo htmlspecialchars("'>It Works!</h2>"); ?>
 
 <?php echo htmlspecialchars("</div>"); ?>
-</pre>
-					</div>
+	</pre>
+		</div>
+				</div>
 				</div>
 
 				<div class='animatedParent'>
