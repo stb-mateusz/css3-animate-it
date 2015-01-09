@@ -41,7 +41,7 @@ And some more other stuff with CSS3-animate-it. for more go through these link <
 animations.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
-Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues.
+Pull requests are the way to go here. I apologize in advance for the slow action on pull requests and issues.
 
-CSS3-Animate-it by a href="http://jackonthe.net/" target="_Blank">Jack Mccourt</a>
+CSS3-Animate-it by <a href="http://jackonthe.net/" target="_Blank">Jack Mccourt</a>
 
