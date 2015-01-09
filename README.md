@@ -1,7 +1,4 @@
-CSS3-animate-it
-===============
-
-#Animate.css
+#CSS3-animate-it
 *Just-add-water CSS animation*
 
 `CSS3-animate-it` is a bunch of cool, fun, and cross-browser animations for you to use in your projects.
