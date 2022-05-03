@@ -457,7 +457,7 @@ $(document.body).on('appear', '.animatedParent', function(e, $affected){
 
     $(parent).find(".animated[data-id="+ number +"]").addClass('go');
     number ++;
-    delay = Number(parent.attr('data-sequence'));
+    var delay = Number(parent.attr('data-sequence'));
 
     $.doTimeout(delay, function(){
       $(parent).find(".animated[data-id="+ number +"]").addClass('go');
